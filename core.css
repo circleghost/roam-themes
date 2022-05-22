@@ -177,7 +177,7 @@ textarea, a {
 
 .roam-main {
     width: unset !important;
-    max-width: 100% !important;
+/*     max-width: 100% !important; */
     height: 100%;
     
     overflow-x: scroll;
