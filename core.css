@@ -374,17 +374,17 @@ textarea, a {
 }
 
 
-.roam-topbar .bp3-icon-star::before {
+.rm-topbar .bp3-icon-star::before {
     color: rgb(var(--color-primary)) !important;
     color: rgb(var(--color-secondary)) !important;
 }
 /* fix positioning problems with menu icon */
-.roam-topbar *[class*="icon-menu"]::before {
+.rm-topbar *[class*="icon-menu"]::before {
     position: absolute !important;
     top: 4px !important;
     left: 4px !important;
 }
-.roam-topbar .bp3-icon-menu-open::before {
+.rm-topbar .bp3-icon-menu-open::before {
     content: ""; /* prevent menu icon from changing on hover */
 }
 
@@ -509,7 +509,7 @@ textarea, a {
 }
 
 
-.roam-topbar {
+.rm-topbar {
     opacity: 1 !important;
     background-color: transparent !important;
     
@@ -594,7 +594,7 @@ textarea, a {
     top: 5px;
 }
 
-.roam-topbar > .flex-h-box {
+.rm-topbar > .flex-h-box {
     width: 50px;
     flex-direction: column;
     height: 1px !important;
@@ -605,20 +605,20 @@ textarea, a {
     position: sticky !important;
     left: 0px;
 }
-.roam-topbar > .flex-h-box > * {
+.rm-topbar > .flex-h-box > * {
     flex: 0 0 20px !important;
     margin: auto !important;
     max-width: 20px !important;
     max-height: 20px !important;
 }
-.roam-topbar > div >.bp3-button:first-child {
+.rm-topbar > div >.bp3-button:first-child {
     align-self: start !important;
     position: fixed !important;
     left: 16px;
     top: 78px;
     z-index: 9999999 !important;
 }
-.roam-topbar > div > *:nth-child(2) {
+.rm-topbar > div > *:nth-child(2) {
     margin-top:20px !important;
 }
 
@@ -640,7 +640,7 @@ textarea, a {
 
 /* SOME BLACKMAGIC TO GET SEARCH ICON TO FUNCTION LIKE OTHER BUTTONS */
 
-.roam-topbar .bp3-icon-search {
+.rm-topbar .bp3-icon-search {
     padding: 4px;
     border-radius: 3px;
     margin: 0 !important;
@@ -651,13 +651,13 @@ textarea, a {
 /* hovering search bar in this mode == hovering icon itself */
 /* we must however have the search bar in front of the icon (but invisible) so that it can focus on click */
 /* very hacky :P */
-.rm-find-or-create-wrapper[style*="200px"]:hover .bp3-icon-search, .roam-topbar .bp3-icon-search:hover {
+.rm-find-or-create-wrapper[style*="200px"]:hover .bp3-icon-search, .rm-topbar .bp3-icon-search:hover {
     background-color: rgba(var(--color-primary), 0.4);
     color: var(--text-color) !important;
 }
-.roam-topbar .bp3-icon-search svg { padding: 1px; }
+.rm-topbar .bp3-icon-search svg { padding: 1px; }
 /* fix centering on calendar icon */
-.roam-topbar .bp3-icon-calendar { margin: 0 !important }
+.rm-topbar .bp3-icon-calendar { margin: 0 !important }
 
 .rm-find-or-create-wrapper {
     width: 20px !important;
@@ -1361,8 +1361,8 @@ code {
 
 /* fix specific popover sizes and positions... */
 
-.roam-topbar .bp3-popover-wrapper:nth-child(6) .bp3-popover,
-.roam-topbar .bp3-popover-wrapper:nth-child(7) .bp3-popover{
+.rm-topbar .bp3-popover-wrapper:nth-child(6) .bp3-popover,
+.rm-topbar .bp3-popover-wrapper:nth-child(7) .bp3-popover{
     width: 600px;
     max-width: calc(100vw - 20px);
 }
@@ -1379,7 +1379,7 @@ code {
 
 
 @media only screen and (max-width: 600px) {
-    .roam-topbar {
+    .rm-topbar {
         margin: 0px !important;
         padding: 10px 0px 0px 0px !important;
         width: 100%;
@@ -1389,7 +1389,7 @@ code {
         left: 0px;
         backdrop-filter: blur(5px);
     }
-    .roam-topbar::before {
+    .rm-topbar::before {
         content: "";
         position: absolute;
         top: 0; left: 0;
@@ -1398,7 +1398,7 @@ code {
         opacity: 0.7;
         
     }
-    .roam-topbar > .flex-h-box {
+    .rm-topbar > .flex-h-box {
         flex-direction: row;
         height: 1px !important;
         align-items: start !important;
@@ -1413,7 +1413,7 @@ code {
         margin: auto;
         justify-content: space-evenly;
     }
-    .roam-topbar > div >.bp3-button:first-child {
+    .rm-topbar > div >.bp3-button:first-child {
         position: static !important;
     }
     
@@ -1481,7 +1481,7 @@ code {
             margin: 30px 10px 5px 30px !important;
     }
     
-    .roam-topbar > div > *:nth-child(2) {
+    .rm-topbar > div > *:nth-child(2) {
         margin-top: 0 !important;
     }
     
